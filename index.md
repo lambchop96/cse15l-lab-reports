@@ -1,3 +1,7 @@
+[Lab Report 1](https://lambchop96.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
+
+---
+
 Hello, world!'\
 _This is in italics_\
 **This is bolded**
