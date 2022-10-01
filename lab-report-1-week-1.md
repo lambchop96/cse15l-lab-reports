@@ -1,5 +1,4 @@
 # Week 1 Lab Report
-<<<<<<< HEAD
 
 This is a tutorial on how to remotely access the `ieng6` computers at UCSD from anywhere using your CSE15L account.
 
@@ -95,16 +94,3 @@ Here are two shortcuts to remote running that can make the process of running co
    > `ssh cs15lfa22@ieng6.ucsd.edu "ls"`
 2. Chain multiple commands together by inserting semi-colons between each command.
    > `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`
-=======
-### Installing VSCode
-Go to https://code.visualstudio.com/ and click the **Download** button for your operating system.
-
-### Remotely Connecting
-Check if the ssh command is recognized by your system command prompt.
-If not, install the (OpenSSH Client)[https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui].
-
-### Trying Some Commands
-### Moving Files with scp
-### Setting an SSH Key
-### Optimizing Remote Running
->>>>>>> f0e28c1ded827945b6bf9932c50d17b231dbf065
