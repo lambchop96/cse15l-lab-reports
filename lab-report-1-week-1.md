@@ -72,6 +72,7 @@ To copy this file over to `ieng6`, use the `scp` command, meaning secure copy.
 Remember to replace 'zz' with your corresponding login.
 
 It should then ask for your password, but since it does not work for me, here is a screenshot of a failed `scp` command.
+
 ![failed_scp_image](failed_scp.png)
 Note that the passphrase will not appear as you type it.
 
