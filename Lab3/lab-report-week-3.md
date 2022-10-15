@@ -121,12 +121,14 @@ Originally, the code looped through the full array and set each element to its r
 
 Failure-inducing input:
 
-![](array_tests_4.png)
+![](list_tests_1.png)
 
 Symptom:
 
-![](array_tests_5.png)
+![](list_tests_2.png)
 
 Bug corrected:
 
-![](array_tests_6.png)
+![](list_tests_3.png)
+
+Here, the bug was that in the last while loop, the variable incremented was `index1` instead of `index2`. This caused an infinite loop because it continued to try to add the next elements of `input2` of the failure-inducing input since `index1` was being incremented while `index2` was being checked.
