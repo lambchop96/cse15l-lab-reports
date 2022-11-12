@@ -72,7 +72,7 @@ technical/government
 technical/government/Gen_Account_Office
 ```
 
-Here, we combined the `-type` option with the `-iname` option so that we can recursively search for only directories that start with the letter 'g' regardless of case sensitivity.
+Again, `-type d` searches for only directories. `iname` is used to search for a specific case insensitive file name. Here, we combined the `-type` option with the `-iname` option so that we can recursively search for only directories that start with the letter 'g' regardless of case sensitivity. This is to show that the combination of `-type` and `-iname` is generally useful for searching through file systems based on names and types (directories vs files, etc). It's also useful to note that you can use multiple tags to be more specific with your searches.
 
 ---
 
@@ -87,7 +87,7 @@ technical/biomed/gb-2002-3-5-research0025.txt
 technical/government/Gen_Account_Office/Paper_Walker11-2002_acpro122.txt
 ```
 
-`-size` helps find files and directories based on their size. Above, files that are 50kb are listed.
+`-size` helps find files and directories based on their size. In the above example, we use the `size` option to look for files that are exactly 50kb. This can be useful if, for example, you have a duplicate photo somewhere in your file system, but it has a different name and you don't know where it is. You can search based on file size to find the photo.
 
 ```
 $ find technical/ -size +250k
@@ -98,7 +98,7 @@ technical/government/Gen_Account_Office/d01591sp.txt
 technical/government/Gen_Account_Office/Statements_Feb28-1997_volume.txt
 ```
 
-Adding a plus sign before the byte count allows for searching for files that exceed a certain size. Here, we searched for files exceeding 250kb.
+Adding a plus sign before the byte count allows for searching for files that exceed a certain size. Here, we searched for files exceeding 250kb. This is useful in the situation that we want to eliminate large files from a file system.
 
 ```
 $ find technical/ -size +48k -size -50k
@@ -110,4 +110,4 @@ technical/biomed/gb-2002-3-7-research0035.txt
 technical/biomed/gb-2002-4-1-r2.txt
 ```
 
-We can also set a range of size to search for by using `-size` twice. This searched for files between 48kb and 50kb.
+We can also set a range of size to search for by using `-size` twice. This searched for files between 48kb and 50kb. If you had a file system of DNA sequences and wanted to find all of the sequences between two lengths, this version of the `size` command does that for you.
